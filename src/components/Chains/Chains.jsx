@@ -37,10 +37,20 @@ const menuItems = [
 	// 	value: "Polygon",
 	// 	icon: <PolygonLogo />,
 	// },
+	// {
+	// 	key: "0x13881",
+	// 	value: "Mumbai",
+	// 	icon: <PolygonLogo />,
+	// },
 	{
-		key: "0x13881",
-		value: "Mumbai",
-		icon: <PolygonLogo />,
+		key: "0xC285",
+		value: "Energi Testnet",
+		icon: <EnergiLogo />,
+	},
+	{
+		key: "0x9B75",
+		value: "Energi Mainnet",
+		icon: <EnergiLogo />,
 	},
 ];
 
@@ -80,7 +90,7 @@ function Chains() {
 					key={selected?.key}
 					icon={selected?.icon}
 					style={{ ...styles.button, ...styles.item }}>
-					{chain?.chainId === "0x13881" ? (
+					{chain?.chainId === "0xC285" ? (
 						<>
 							<span style={{ marginLeft: width > 500 ? "5px" : 0 }}>
 								{width > 500 ? selected?.value : null}
