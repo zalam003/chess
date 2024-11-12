@@ -231,7 +231,7 @@ Moralis.Cloud.define(
 
 		const httpResponse = await Moralis.Cloud.httpRequest({
 			method: "POST",
-			url: `https://server.shatranj.ga/end`,
+			url: `https://chess.smartnfts.art/end`,
 			headers: {
 				"Content-Type": "application/json;charset=utf-8",
 			},
@@ -391,7 +391,7 @@ Moralis.Cloud.afterSave("Challenge", async (request) => {
 		// send http request for start game tx
 		const httpResponse = await Moralis.Cloud.httpRequest({
 			method: "POST",
-			url: `https://server.shatranj.ga/start`,
+			url: `https://chess.smartnfts.art/start`,
 			headers: {
 				"Content-Type": "application/json;charset=utf-8",
 			},
@@ -479,7 +479,7 @@ Moralis.Cloud.afterSave("Game", async (request) => {
 				// send http request for end game tx
 				const httpResponse = await Moralis.Cloud.httpRequest({
 					method: "POST",
-					url: "https://server.shatranj.ga/end",
+					url: "https://chess.smartnfts.art/end",
 					headers: {
 						"Content-Type": "application/json;charset=utf-8",
 					},
