@@ -34,7 +34,7 @@ function Account({ elo }) {
 				style={styles.account}
 				onClick={() =>
 					authenticate({
-						signingMessage: "Connect Your Account to GHODA.crypto",
+						signingMessage: "Connect Your Account to chess.smartnfts.art",
 					})
 				}>
 				<p style={styles.text}>Authenticate</p>
